@@ -4,7 +4,7 @@ A simple GitHub Actions workflow to deploy a static website to GitHub Pages.
 
 This project is part of my DevOps learning journey, following the roadmap.sh DevOps path.
 
-- Roadmap.sh project: https://roadmap.sh/projects/github-pages-deployment
+- Roadmap.sh project: https://roadmap.sh/projects/github-actions-deployment-workflow
 - Level: Beginner
 - Main topics: GitHub Actions, GitHub Pages, CI/CD, YAML, Static Websites
 
