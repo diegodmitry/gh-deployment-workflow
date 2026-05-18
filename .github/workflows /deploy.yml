@@ -1,0 +1,29 @@
+name: Deploy to GitHub Pages - Project From Roadmap.sh
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'index.html'
+
+jobs:
+  deploy:
+    permissions:
+      pages: write
+      id-token: write
+    runs-on: ubuntu-latest
+    steps:
+      # Passo 1: checkout
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Passo 2: upload do artefato
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      # Passo 3: deploy
+      - name: Deploy
+        uses: actions/deploy-pages@v4
